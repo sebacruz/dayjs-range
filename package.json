@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest --coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,8 @@
   },
   "homepage": "https://github.com/sebacruz/dayjs-range#readme",
   "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
     "@babel/preset-env": "^7.14.1",
     "cz-conventional-changelog": "^3.3.0",
     "dayjs": "^1.10.4",
@@ -40,5 +43,12 @@
   },
   "lint-staged": {
     "*.{js,css,md}": "prettier --write"
-  }
+  },
+  "np": {
+    "yarn": false,
+    "contents": "dist"
+  },
+  "files": [
+    "src"
+  ]
 }
