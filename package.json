@@ -1,0 +1,44 @@
+{
+  "name": "dayjs-range",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebacruz/dayjs-range.git"
+  },
+  "keywords": [
+    "day.js",
+    "dates-range"
+  ],
+  "author": {
+    "name": "Sebastián Cruz",
+    "email": "cruzjesussebastian@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebacruz/dayjs-range/issues"
+  },
+  "homepage": "https://github.com/sebacruz/dayjs-range#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "dayjs": "^1.10.4",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
